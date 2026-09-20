@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>common</AssemblyName>
+    <RootNamespace>com.softwarearchetypes.common</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src/main/csharp/**/*.cs" />
+  </ItemGroup>
+</Project>

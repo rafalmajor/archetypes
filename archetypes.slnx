@@ -1,0 +1,6 @@
+<Solution>
+	<Project Path="common/common.csproj" />
+	<Project Path="common/src/test/common.Tests.csproj" />
+	<Project Path="graphs/graphs.csproj" />
+	<Project Path="graphs/src/test/graphs.Tests.csproj" />
+</Solution>

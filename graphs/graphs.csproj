@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>graphs</AssemblyName>
+    <RootNamespace>com.softwarearchetypes.graphs</RootNamespace>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src/main/csharp/**/*.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="../common/common.csproj" />
+  </ItemGroup>
+</Project>
