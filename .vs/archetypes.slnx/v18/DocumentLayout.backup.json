@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Github\\archetypes\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F514A905-523C-009A-3A29-22500B274668}|common\\src\\test\\common.Tests.csproj|c:\\github\\archetypes\\common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\preconditionstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F514A905-523C-009A-3A29-22500B274668}|common\\src\\test\\common.Tests.csproj|solutionrelative:common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\preconditionstest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F514A905-523C-009A-3A29-22500B274668}|common\\src\\test\\common.Tests.csproj|c:\\github\\archetypes\\common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\commonutilitiestest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F514A905-523C-009A-3A29-22500B274668}|common\\src\\test\\common.Tests.csproj|solutionrelative:common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\commonutilitiestest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F514A905-523C-009A-3A29-22500B274668}|common\\src\\test\\common.Tests.csproj|c:\\github\\archetypes\\common\\src\\test\\common.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{F514A905-523C-009A-3A29-22500B274668}|common\\src\\test\\common.Tests.csproj|solutionrelative:common\\src\\test\\common.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF245417-ECF9-866D-7FC5-DC6750CEE2C9}|graphs\\graphs.csproj|c:\\github\\archetypes\\graphs\\src\\main\\csharp\\com\\softwarearchetypes\\graphs\\cycles\\slotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF245417-ECF9-866D-7FC5-DC6750CEE2C9}|graphs\\graphs.csproj|solutionrelative:graphs\\src\\main\\csharp\\com\\softwarearchetypes\\graphs\\cycles\\slotrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 18,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{8294f124-07d1-574c-bf4d-1c4a34e31c86}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{be4d7042-ba3f-11d2-840e-00c04f9902c1}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{34c7837f-3b3a-449c-bdf0-bdad86cbaf4a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5726b0e3-1012-5233-81f9-d1fad48e7a56}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{dcc4ea97-1c0c-482b-b205-e541c0df9728}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PreconditionsTest.cs",
+              "DocumentMoniker": "C:\\Github\\archetypes\\common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\PreconditionsTest.cs",
+              "RelativeDocumentMoniker": "common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\PreconditionsTest.cs",
+              "ToolTip": "C:\\Github\\archetypes\\common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\PreconditionsTest.cs",
+              "RelativeToolTip": "common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\PreconditionsTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T17:53:26.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CommonUtilitiesTest.cs",
+              "DocumentMoniker": "C:\\Github\\archetypes\\common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\CommonUtilitiesTest.cs",
+              "RelativeDocumentMoniker": "common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\CommonUtilitiesTest.cs",
+              "ToolTip": "C:\\Github\\archetypes\\common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\CommonUtilitiesTest.cs",
+              "RelativeToolTip": "common\\src\\test\\csharp\\com\\softwarearchetypes\\common\\CommonUtilitiesTest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T17:53:25.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "common.Tests",
+              "DocumentMoniker": "C:\\Github\\archetypes\\common\\src\\test\\common.Tests.csproj",
+              "RelativeDocumentMoniker": "common\\src\\test\\common.Tests.csproj",
+              "ToolTip": "C:\\Github\\archetypes\\common\\src\\test\\common.Tests.csproj",
+              "RelativeToolTip": "common\\src\\test\\common.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-09-20T17:53:09.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SlotRepository.cs",
+              "DocumentMoniker": "C:\\Github\\archetypes\\graphs\\src\\main\\csharp\\com\\softwarearchetypes\\graphs\\cycles\\SlotRepository.cs",
+              "RelativeDocumentMoniker": "graphs\\src\\main\\csharp\\com\\softwarearchetypes\\graphs\\cycles\\SlotRepository.cs",
+              "ToolTip": "C:\\Github\\archetypes\\graphs\\src\\main\\csharp\\com\\softwarearchetypes\\graphs\\cycles\\SlotRepository.cs",
+              "RelativeToolTip": "graphs\\src\\main\\csharp\\com\\softwarearchetypes\\graphs\\cycles\\SlotRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T17:52:52.303Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

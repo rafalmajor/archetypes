@@ -1,6 +1,6 @@
 # Java -> C# Migration Plan
 
-Status: PLAN, code porting has not started.
+Status: M00-M02 completed; M03 is next.
 Assessment date: 2026-09-20. Document language: English (ASCII).
 
 ## 1. Goal and Non-Negotiable Rules
@@ -11,13 +11,15 @@ observable code behavior. This is a language and tooling migration, not an
 architectural redesign.
 
 - Preserve all 11 module directories and their responsibility boundaries.
-- Preserve the names of types, interfaces, methods, model fields, events, and
-  scenarios. Do not automatically add the `I` prefix to interfaces or `Async`
-  suffixes. Existing camelCase names may remain: modern C# does not require
-  changing the API.
-- Preserve the `com.softwarearchetypes.*` namespaces corresponding to Java
-  packages and the subdirectory paths. Do not convert names to PascalCase
-  without separate approval.
+- Preserve the names of types, interfaces, model fields, events, and scenarios.
+   Do not automatically add the `I` prefix to interfaces or `Async` suffixes.
+   Under the user-approved D006 exception, C# methods use PascalCase while type
+   names and behavior remain unchanged.
+- Java reference packages, paths, and names remain unchanged. Under D006, the
+   completed M01/M02 C# ports use PascalCase namespaces and matching C# directory
+   segments: `SoftwareArchetypes.Common` and `SoftwareArchetypes.Graphs...`.
+   Future migration stages follow C# namespace, directory, and method naming
+   standards consistently unless an explicit decision states otherwise.
 - Preserve inheritance, implemented contracts, composition, relationship
   direction, cardinality, optionality, entity identity, and aggregate lifecycles.
 - Do not merge similar types from different modules, such as `Validity`,
@@ -113,23 +115,27 @@ common/
   src/
     main/
       java/com/softwarearchetypes/common/...       [Java reference]
-      csharp/com/softwarearchetypes/common/...     [C# port]
+         csharp/SoftwareArchetypes/Common/...         [C# port]
     test/
       common.Tests.csproj
       java/com/softwarearchetypes/common/...       [reference tests]
-      csharp/com/softwarearchetypes/common/...     [C# tests]
+         csharp/SoftwareArchetypes/Common/...         [C# tests]
 ```
 
 - File mapping: `<module>/src/main/java/<path>/<Type>.java` to
-  `<module>/src/main/csharp/<path>/<Type>.cs`. Apply the same mapping to tests.
+   `<module>/src/main/csharp/<PascalCase path>/<Type>.cs`. Apply the same mapping
+   to tests. For example, Java `com/softwarearchetypes/graphs/cycles/math` maps
+   to C# `SoftwareArchetypes/Graphs/Cycles/Math`; the Java path is not renamed.
 - `common/common.csproj`: disable `EnableDefaultCompileItems`; include only
   `src/main/csharp/**/*.cs`. This prevents compiling tests and their `obj` files.
 - `common/src/test/common.Tests.csproj`: likewise, explicitly include
   `csharp/**/*.cs`; reference `../../common.csproj`.
 - Keep assembly names aligned with modules: `common`, `quantity`, etc.; tests
-  use `<module>.Tests`. The namespace comes from the package, not the assembly name.
-- `rules` also contains `com.softwarearchetypes.scoring`: keep it in the
-  `rules` project under its original path, without a new `scoring` project.
+   use `<module>.Tests`. C# namespaces follow the PascalCase form of the Java
+   package segments under D006, not the assembly name.
+- `rules` also contains Java package `com.softwarearchetypes.scoring`: keep it
+   in the `rules` project without a new `scoring` project. Its Java path remains
+   unchanged; its future C# namespace and path follow D006.
 - Test utilities in `party/src/test/java/com/softwarearchetypes/common`
   remain test utilities for `party`; do not move them to the `common` library.
 - Keep nested types nested. Do not artificially require one file per type
@@ -173,6 +179,8 @@ Resolve name collisions with .NET through explicit `using` aliases or qualified
 names, e.g. for `Version`, `Unit`, `Process`, and `Expression`, not by changing
 the domain. C# keywords can be escaped with `@`. Any unavoidable exception to
 preserving names or relationships requires a recorded decision and approval.
+D006 is the scoped naming exception for C# namespaces, matching directory
+segments, and methods; it does not change Java references, type names, or behavior.
 
 ## 5. Required Procedure for Each Module
 

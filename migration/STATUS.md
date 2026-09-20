@@ -29,7 +29,8 @@ Reference revision: `b3839f0188b272c6b4332efbc10700aefd77e9b5`
 - Coverage: all 35 production and 15 test/helper Java files have C# counterparts
 - Build and formatting: Release build passed with no warnings; `dotnet format --verify-no-changes` passed
 - Dependencies: common only under D004; quantity remains intentionally deferred
-- Resume point: M03 entry, resolve D002 before numeric implementation, port quantity, restore graphs -> quantity, and rerun common, graphs, and quantity tests
+- Naming refactor: D006 applied to completed common and graphs C# namespaces, matching directory segments, and methods; 99 common, 54 graphs, and 153 solution tests passed
+- Resume point: M03 entry, continue the D006 C# namespace/directory/method convention, resolve D002 before numeric implementation, port quantity, restore graphs -> quantity, and rerun common, graphs, and quantity tests
 
 ## Decision Log
 
@@ -40,6 +41,7 @@ Reference revision: `b3839f0188b272c6b4332efbc10700aefd77e9b5`
 | D003 | Java generic reference types can carry `null`, including boxed numeric failures supplied to `Result.combine` | Use nullable C# failure arguments, such as `Result<int?, S>`, when absence is part of the failure-combiner contract | Preserves null rather than substituting `default(int)`; callers must express nullability in the type argument | ResultTest 57/57 passed, including mixed success/failure combinations | APPROVED |
 | D004 | `graphs` declares `quantity`, but its 35 production and 15 test/helper files contain no common or quantity imports | Reference migrated common only and defer graphs -> quantity until M03 | Temporary deviation from the final dependency graph; no placeholder project | Java graphs baseline 54/54 passed; import audit found no use | APPROVED BY PLAN |
 | D005 | Graphs uses JGraphT directed/undirected graphs, DAG rejection, all simple directed paths, connectivity, articulation points, greedy coloring, and topological order | Use small local graph representations and algorithms tailored to each use case; keep the educational `cycles.math` graph unchanged and add no graph NuGet dependency | Preserves directed edge identity and insertion order, undirected conflict/connectivity projection, cycle rejection, exhaustive simple paths, Tarjan cutpoints, lowest-available greedy colors, and stable Kahn topological order | Focused C# tests: cycles 19/19, scheduling 5/5, concurrency 4/4, influence 13/13, userjourney 13/13 | APPROVED FOR M02 |
+| D006 | Java packages, directory segments, and methods use the original `com.softwarearchetypes` and lower-camel naming | For completed M01/M02, use PascalCase C# namespaces and matching directory segments (`SoftwareArchetypes.Common`, `SoftwareArchetypes.Graphs...`) and PascalCase C# methods; leave Java references, type names, and behavior unchanged | Source-breaking naming only for C# callers; no behavioral or type-name change | Naming-refactor verification: 99 common + 54 graphs + 153 solution tests passed | APPROVED BY USER 2026-09-20 |
 
 ## Stage Report
 
@@ -74,8 +76,9 @@ Commands and results:
 - `dotnet build .\archetypes.slnx --configuration Release`: passed with 0 warnings and 0 errors.
 - `dotnet test .\archetypes.slnx --no-build --configuration Release --logger trx`: 99 passed, 0 failed, 0 skipped.
 - `dotnet format .\archetypes.slnx --verify-no-changes --no-restore`: passed.
+- D006 naming-refactor verification: PascalCase C# namespace, directory, and method convention applied; 99 common tests and 153 solution tests passed.
 
-Differences and limitations: `Instant` is represented by UTC `DateTimeOffset` at 100 ns precision. Java package-private Result variant constructors are represented by `internal` constructors, and the public abstract hierarchy has a `private protected` constructor to prevent external variants. Java `Set` and `List` result views are exposed as read-only collection interfaces, while each accumulation still creates a defensive copy. M02 has not started.
+Differences and limitations: `Instant` is represented by UTC `DateTimeOffset` at 100 ns precision. Java package-private Result variant constructors are represented by `internal` constructors, and the public abstract hierarchy has a `private protected` constructor to prevent external variants. Java `Set` and `List` result views are exposed as read-only collection interfaces, while each accumulation still creates a defensive copy. Under D006, C# namespaces, matching directory segments, and methods use PascalCase while Java references, type names, and behavior remain unchanged.
 
 ### M02 - graphs
 
@@ -88,5 +91,6 @@ Differences and limitations: `Instant` is represented by UTC `DateTimeOffset` at
 - Full C# solution verification: 153 passed, 0 failed, 0 skipped in Release (common 99 plus graphs 54)
 - Build result: Release test builds completed with 0 warnings and 0 errors
 - Formatting: `dotnet format .\archetypes.slnx --verify-no-changes --no-restore` passed
+- D006 naming-refactor verification: PascalCase C# namespace, directory, and method convention applied; 54 graphs tests and 153 solution tests passed
 - Coverage audit: all 35 production and 15 test/helper Java files have matching C# files; all 54 annotated Java test methods have matching C# test methods
-- Remaining obligation: restore the deferred graphs -> quantity `ProjectReference` during M03 and rerun common, graphs, and quantity tests
+- Remaining obligation: continue the D006 C# convention in M03, restore the deferred graphs -> quantity `ProjectReference`, and rerun common, graphs, and quantity tests

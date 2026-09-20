@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>common.Tests</AssemblyName>
-    <RootNamespace>com.softwarearchetypes.common</RootNamespace>
+    <RootNamespace>SoftwareArchetypes.Common</RootNamespace>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <IsPackable>false</IsPackable>
     <IsTestProject>true</IsTestProject>
